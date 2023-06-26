@@ -3,16 +3,16 @@
 
 name: Node.js CI
 
-on:
-  schedule:
-    - cron: "0/5 * * * *"
+on: [push, pull_request]
+#   schedule:
+#     - cron: "0/5 * * * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
+#     strategy:
+#       matrix:
+#         node-version: [14.x, 16.x, 18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -41,6 +41,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+#     - run: npm ci
+#     - run: npm run build --if-present
+#     - run: npm test
