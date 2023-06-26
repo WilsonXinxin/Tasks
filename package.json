@@ -1,0 +1,19 @@
+{
+  "name": "tasks",
+  "version": "1.0.0",
+  "description": "- https://zhuanlan.zhihu.com/p/395044367\r - https://juejin.cn/post/7035977625604456462",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilsonXinxin/Tasks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WilsonXinxin/Tasks/issues"
+  },
+  "homepage": "https://github.com/WilsonXinxin/Tasks#readme"
+}
