@@ -3,9 +3,11 @@
 
 name: Python application
 
-on: [push, pull_request]
-#   schedule:
-#     - cron: "0 18 * * *"
+on: 
+# [push, pull_request]
+# 考虑时区
+  schedule:
+    - cron: "0 18 * * *"
 
 jobs:
   build:
