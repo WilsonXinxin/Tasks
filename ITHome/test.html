@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<button onclick="send()">Send</button>
+
+		<script>
+			function send() {
+				const Http = new XMLHttpRequest()
+				const url = `https://my.ruanmei.com/api/usersign/sign?userHash=9833688dcb027758546669f94699a31014476e08092e1fb4941295f0b91b37f4181fe763f3404c3e9ed982c2ec3099df&type=3&timestamp=${new Date().getTime()}&kbfbf3a2d1c611173=f82512c8f3f7948d2f160944305b31b9577702b5bb3815ce`
+				Http.open("get", url)
+				Http.send()
+
+				Http.onreadystatechange = (e) => {
+					console.log(Http.responseText)
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/WilsonXinxin/Tasks/issues"
   },
-  "homepage": "https://github.com/WilsonXinxin/Tasks#readme"
+  "homepage": "https://github.com/WilsonXinxin/Tasks#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "node-fetch": "^2.6.7"
+  }
 }
